@@ -1,0 +1,136 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    background-color: rgb(250, 250, 250);
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 0.3rem;
+}
+
+.c {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: rgb(233, 233, 233);
+    border-radius: 8%;
+    margin: 10px;
+    padding: 10px;
+    animation: 4s glow alternate infinite;
+}
+
+.u {
+    margin-right: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.h {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    display: flex; 
+    justify-content: center;
+    font-size: 25px;
+    color: rgba(0, 115, 182, 0.801);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+@keyframes glow {
+    from {
+        color: rgba(175, 211, 231, 0.801);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.desc {
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+}
+
+.wrapper {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.paste {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.desc-heading {
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    padding: 20px 0 20px 0; 
+    background-color: rgba(0, 108, 167, 0.801);
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-right: 4px;
+    /* padding-bottom: 0; */
+}
+    .desc-heading:hover {
+        background-color: rgba(0, 0, 0, 0.897);
+        transition: all 1s ease;
+        border: none;
+        box-shadow: 0 1px 20px 0 #999;
+    }
+
+.text {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.textarea {
+    margin: 30px;
+    width: 50%;
+    height: 7rem;
+    resize: none;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .ctrl {
+        margin-bottom: 50px;
+    }
+}
+
+.help {
+    padding-right: 10px;
+}
+
+a {
+    /* text-decoration: none; */
+    color: rgba(0, 103, 158, 0.801)
+}
