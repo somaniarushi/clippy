@@ -10,11 +10,11 @@
 <body>
     <h1 class="title">
         <span class="ctrl">
-            <span class="c" id="ut1">CTRL</span>+<span class="c u ut2">U</span>
+            <span class="c" id="ut1">CTRL</span>+<span class="c u ut2">B</span>
         </span>
 
         <span class="ctrl">
-            <span class="c ht">CTRL</span>+<span class="c h ht">H</span>
+            <span class="c ht">CTRL</span>+<span class="c h ht">M</span>
         </span>
     </h1>
     <!-- <p class="subtitle">website-wide custom clipboard tool</p> -->
@@ -22,11 +22,11 @@
     <div class="wrapper">
     <div class="desc">
         <div class="copy">
-            <p class="desc-heading">CTRL+U / CMD+U to copy</p>
+            <p class="desc-heading">CTRL+B / CMD+B to copy</p>
             <p>It saves selected text to a local clipboard.</p><p></p>
         </div>
         <div class="paste">
-            <p class="desc-heading">CTRL+H / CMD+H to paste</p><p> Feel free to paste stuff in the textarea below!</p>
+            <p class="desc-heading">CTRL+M / CMD+M to paste</p><p> Feel free to paste stuff in the textarea below!</p>
         </div>
     </div>
     </div>
@@ -61,7 +61,7 @@
         var value = "";
 
         document.addEventListener('keydown', function(event){
-                if (event.metaKey && event.key==="h") {
+                if (event.metaKey && event.key==="m") {
                     console.log(value);
                     if (document.activeElement.nodeName == 'TEXTAREA' || document.activeElement.nodeName == 'INPUT') {
                         document.activeElement.innerHTML += value;
@@ -69,7 +69,7 @@
                 } 
                 else {
                     var thetext = getSelectionText()
-                        if (event.metaKey && event.key==="u") {
+                        if (event.metaKey && event.key==="b") {
                               if (thetext.length > 0){ // check there's some text selected
                               console.log(thetext) // logs whatever textual content the user has selected on the page
                                 value = thetext;
